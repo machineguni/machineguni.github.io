@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecycleAI - Basurero Reciclador Automático</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -37,7 +37,7 @@
                 <img src="images/mascota.png" alt="Mascota RecycleAI" class="mascot-img">
             </div>
             <h2>Basurero Reciclador Automático</h2>
-            <p>Innovando en la gestión de residuos mediante inteligencia artificial y automatización. Nuestro sistema integra tecnología de vanguardia para facilitar y optimizar el proceso de reciclaje, contribuyendo a un futuro más sostenible.</p>
+            <p>RecycleAI es un proyecto innovador que propone la creación de un basurero inteligente capaz de clasificar automáticamente residuos en distintas categorías, utilizando sensores, visión artificial e inteligencia artificial. Está diseñado para identificar materiales como plástico, papel, vidrio, metales y desechos orgánicos, y depositarlos en el compartimento correspondiente de forma automatizada.</p>
             <a href="#funcionamiento" class="cta-button">Descubre cómo funciona</a>
         </div>
     </section>
@@ -50,29 +50,29 @@
                     <div class="card-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Objetivo Principal</h3>
-                    <p>Revolucionar la gestión de residuos mediante un sistema automatizado que combina inteligencia artificial y mecatrónica. Nuestro basurero inteligente no solo clasifica residuos, sino que educa y promueve prácticas sostenibles en la comunidad.</p>
+                    <h3>Objetivo General</h3>
+                    <p>Desarrollar un prototipo de basurero inteligente que clasifique y recicle automáticamente los residuos mediante el uso de inteligencia artificial, sensores y componentes electrónicos.</p>
                 </div>
                 <div class="objetivo-card">
                     <div class="card-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-list-check"></i>
                     </div>
-                    <h3>Sistema Mecatrónico</h3>
-                    <p>Desarrollar una estructura modular y eficiente que integra sensores de última generación, actuadores precisos y compartimentos inteligentes. El sistema está diseñado para maximizar la precisión en la clasificación y optimizar el espacio disponible.</p>
+                    <h3>Objetivos Específicos</h3>
+                    <p>Investigar sobre los tipos de residuos y su clasificación. Estudiar tecnologías viables para la automatización (sensores, cámaras, motores). Diseñar el sistema mecánico de apertura y separación de residuos. Entrenar un modelo de inteligencia artificial que reconozca materiales.</p>
                 </div>
                 <div class="objetivo-card">
                     <div class="card-icon">
-                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>IA y Reconocimiento</h3>
-                    <p>Implementar un sistema avanzado de visión artificial capaz de identificar y clasificar diferentes tipos de residuos con alta precisión. El modelo de IA se entrena continuamente para mejorar su rendimiento.</p>
+                    <h3>Justificación</h3>
+                    <p>El reciclaje es una necesidad urgente ante la creciente acumulación de residuos en el planeta. Sin embargo, muchas personas no clasifican correctamente la basura por desconocimiento o descuido. Con RecycleAI buscamos automatizar el proceso de clasificación desde el punto de origen.</p>
                 </div>
                 <div class="objetivo-card">
                     <div class="card-icon">
                         <i class="fas fa-desktop"></i>
                     </div>
-                    <h3>Monitoreo en Tiempo Real</h3>
-                    <p>Crear una interfaz intuitiva que muestra estadísticas de reciclaje, niveles de llenado y alertas del sistema. La pantalla LCD proporciona retroalimentación inmediata y guía a los usuarios en el proceso de reciclaje.</p>
+                    <h3>Aplicaciones Futuras</h3>
+                    <p>Adaptación del prototipo para uso en escuelas, plazas, oficinas. Añadir panel solar para hacerlo autosustentable. App móvil para seguimiento del reciclaje. Sistema de recompensas o gamificación para motivar a los usuarios.</p>
                 </div>
             </div>
         </div>
@@ -84,23 +84,31 @@
             <div class="funcionamiento-steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Detección Inteligente</h3>
-                    <p>El sensor ultrasónico HC-SR04 detecta la presencia de usuarios en un rango de hasta 2 metros, activando automáticamente el sistema. Esta tecnología permite una interacción sin contacto, mejorando la higiene y facilidad de uso.</p>
+                    <div class="step-content">
+                        <h3>Detección del Objeto</h3>
+                        <p>El usuario deposita un objeto en la compuerta de entrada. Un sensor detecta el objeto y activa la cámara para comenzar el proceso de clasificación.</p>
+                    </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Apertura Automática</h3>
-                    <p>Un servomotor de alta precisión controla la apertura suave y silenciosa de la tapa. El mecanismo está diseñado para optimizar el consumo de energía y garantizar una larga vida útil con mínimo mantenimiento.</p>
+                    <div class="step-content">
+                        <h3>Captura y Análisis</h3>
+                        <p>El sistema toma una imagen y la inteligencia artificial la analiza para identificar el tipo de material, utilizando un modelo entrenado con un amplio dataset de residuos.</p>
+                    </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Clasificación por IA</h3>
-                    <p>La cámara Raspberry Pi captura imágenes del residuo y nuestro modelo de IA, entrenado con miles de muestras, identifica el tipo de material con una precisión superior al 90%. El sistema reconoce plásticos, metales, papel y residuos orgánicos.</p>
+                    <div class="step-content">
+                        <h3>Clasificación Inteligente</h3>
+                        <p>Una vez clasificado, se activa un motor que mueve el objeto al compartimento adecuado (por gravedad, cinta o brazo mecánico) según el tipo de residuo: plástico, papel, vidrio, metal u orgánico.</p>
+                    </div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Separación Automatizada</h3>
-                    <p>Un sistema de compuertas controladas por motores paso a paso dirige cada residuo a su compartimento correspondiente. Las celdas de carga monitorizan el peso y nivel de llenado, optimizando la gestión de la recolección.</p>
+                    <div class="step-content">
+                        <h3>Retroalimentación</h3>
+                        <p>Opcionalmente, una pantalla muestra mensajes como el tipo de residuo identificado, consejos ecológicos o estadísticas de reciclaje, fomentando la educación ambiental entre los usuarios.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,28 +123,28 @@
                         <i class="fas fa-microchip"></i>
                     </div>
                     <h3>Control Central</h3>
-                    <p>El cerebro del sistema utiliza un Raspberry Pi 4 con 4GB de RAM, complementado por un Arduino Uno para el control de sensores y actuadores. Esta combinación proporciona el poder de procesamiento necesario para la IA y la precisión en el control de componentes.</p>
-                </div>
-                <div class="componente-card">
-                    <div class="card-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Sistema Sensorial</h3>
-                    <p>Red integrada de sensores que incluye: HC-SR04 para detección de presencia, sensores infrarrojos para monitoreo de residuos en caída, y celdas de carga de alta precisión para medición de peso en cada compartimento. Todo el sistema está calibrado para funcionar en diversas condiciones ambientales.</p>
+                    <p>Microcontrolador Arduino UNO que actúa como el cerebro del sistema, coordinando todos los componentes y procesando la información de los sensores para tomar decisiones de clasificación.</p>
                 </div>
                 <div class="componente-card">
                     <div class="card-icon">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h3>Visión Artificial</h3>
-                    <p>Cámara Raspberry Pi HQ de 12.3 MP con lente gran angular, optimizada para captura en condiciones de baja luz. El procesamiento de imágenes se realiza mediante TensorFlow Lite, con un modelo personalizado entrenado para reconocer múltiples tipos de residuos.</p>
+                    <h3>Sistema de Visión</h3>
+                    <p>Cámara (Pi Camera o módulo OV7670) para capturar imágenes de los residuos, junto con software de procesamiento de imágenes basado en OpenCV para el análisis visual inicial.</p>
+                </div>
+                <div class="componente-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>IA y Software</h3>
+                    <p>Software desarrollado en Python con TensorFlow/Keras para el modelo de inteligencia artificial que realiza la clasificación de residuos con una precisión objetivo del 80% o superior.</p>
                 </div>
                 <div class="componente-card">
                     <div class="card-icon">
                         <i class="fas fa-cog"></i>
                     </div>
                     <h3>Sistema Mecánico</h3>
-                    <p>Conjunto de actuadores que incluye un servomotor MG996R para la tapa principal, motores paso a paso NEMA17 para el sistema de clasificación, y un diseño modular de compartimentos expandible. La estructura está fabricada en materiales durables y resistentes a la corrosión.</p>
+                    <p>Estructura de cartón y plástico, servomotores o actuadores lineales para el movimiento de compuertas, sensores ultrasónicos para detección, pantalla LCD para feedback y batería o fuente de alimentación.</p>
                 </div>
             </div>
         </div>
@@ -150,29 +158,29 @@
                     <div class="card-icon">
                         <i class="fas fa-recycle"></i>
                     </div>
-                    <h3>Reciclaje Eficiente</h3>
-                    <p>Optimiza el proceso de separación de residuos con una precisión superior al 90%. El sistema reduce significativamente los errores de clasificación comunes, mejorando la calidad del material reciclable y disminuyendo los costos de procesamiento posterior.</p>
+                    <h3>Precisión en Reciclaje</h3>
+                    <p>Capacidad de clasificar residuos con al menos un 80% de precisión, reduciendo errores en la separación y mejorando la calidad de los materiales reciclables que llegan a los centros de procesamiento.</p>
                 </div>
                 <div class="ventaja-card">
                     <div class="card-icon">
-                        <i class="fas fa-hand-sparkles"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Operación Sin Contacto</h3>
-                    <p>La automatización completa elimina la necesidad de contacto directo con los residuos o el contenedor. El sistema de sensores detecta la presencia del usuario y opera de forma autónoma, garantizando una experiencia higiénica y segura.</p>
-                </div>
-                <div class="ventaja-card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Monitoreo Inteligente</h3>
-                    <p>Sistema avanzado de seguimiento que proporciona datos en tiempo real sobre niveles de llenado, estadísticas de reciclaje y estado del equipo. Las alertas automáticas optimizan la logística de recolección y mantenimiento.</p>
+                    <h3>Eficiencia</h3>
+                    <p>Tiempo de clasificación menor a 5 segundos por objeto, garantizando un proceso rápido y eficiente que no entorpece el flujo normal de desecho de residuos en entornos domésticos o institucionales.</p>
                 </div>
                 <div class="ventaja-card">
                     <div class="card-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Valor Educativo</h3>
-                    <p>Perfecto para instituciones educativas, el sistema incluye una interfaz interactiva que educa sobre prácticas de reciclaje. Los usuarios reciben retroalimentación inmediata y pueden seguir su contribución al medio ambiente a través de estadísticas personalizadas.</p>
+                    <p>Aumento de la conciencia ambiental entre los usuarios, convirtiendo el acto de desechar residuos en una oportunidad de aprendizaje sobre sostenibilidad y cuidado del medio ambiente.</p>
+                </div>
+                <div class="ventaja-card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Impacto Ambiental</h3>
+                    <p>Reducción del volumen de basura mezclada que llega a los vertederos, disminución de la contaminación por mala clasificación y promoción de una cultura de reciclaje responsable en la comunidad.</p>
                 </div>
             </div>
         </div>
@@ -216,12 +224,69 @@
         </div>
     </section>
 
+    <section id="modelo" class="section model-section">
+        <div class="container">
+            <h2>Modelo 3D</h2>
+            <div class="model-container">
+                <div class="model-wrapper">
+                    <model-viewer
+                        id="recycleai-model"
+                        alt="RecycleAI 3D Model"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        environment-image="neutral"
+                        exposure="0.8"
+                        poster="/images/model-poster.jpg"
+                        loading="eager">
+                        <div class="model-placeholder">
+                            <div class="model-loading">
+                                <i class="fas fa-recycle fa-spin"></i>
+                                <p>Cargando modelo 3D...</p>
+                            </div>
+                        </div>
+                    </model-viewer>
+                </div>
+                <p class="model-description">Este es nuestro diseño 3D del RecycleAI. El modelo muestra los compartimentos internos, los sensores y el sistema de clasificación automatizado diseñado para identificar y separar correctamente los diferentes tipos de residuos.</p>
+                <div class="model-controls">
+                    <button class="model-button" id="rotate-model">
+                        <i class="fas fa-sync-alt"></i> Rotar modelo
+                    </button>
+                    <button class="model-button" id="reset-model">
+                        <i class="fas fa-home"></i> Restablecer vista
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descargas" class="section download-section">
+        <div class="container download-container">
+            <h2 class="download-title">Descargas</h2>
+            <p>RecycleAI no solo es un prototipo funcional, sino también un mensaje claro: la tecnología puede y debe ser usada para cuidar nuestro planeta.</p>
+            <div class="download-buttons">
+                <a href="https://www.canva.com/design/DAGkoHaIZH0/oUYOdtSz0vH9zylX_T1A5g/edit?utm_content=DAGkoHaIZH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="download-button" id="download-code">
+                    <i class="fas fa-video"></i>
+                    Pitch
+                </a>
+                <a href="extras/Documentación del Proyecto RecycleAI.pdf" class="download-button" id="download-docs">
+                    <i class="fas fa-file-pdf"></i>
+                    Documentación (PDF)
+                </a>
+                <a href="#" class="download-button" id="download-schematics">
+                    <i class="fas fa-project-diagram"></i>
+                    Esquemas Técnicos (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 RecycleAI. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
